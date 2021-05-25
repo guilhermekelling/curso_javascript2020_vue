@@ -1,0 +1,26 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "scripts": {
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "exercicios": "http-server ./exercicios -c-1",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "qrcode": "http-server ./qrcode -c-1",
+    "sales": "http-server ./sales -c-1"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "vue-cli-plugin-electron-builder": "~2.0.0-rc.6"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
